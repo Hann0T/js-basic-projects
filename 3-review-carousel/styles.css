@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header__title {
+  position: relative;
+  margin-bottom: 2em;
+  color: #112c43;
+  text-align: center;
+}
+.main-header__title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin-top: 10px;
+  width: 30%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #49a6e9;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1em;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+.carousel__item {
+  display: none;
+}
+
+.controller-prev,
+.controller-next {
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  color: #49a6e9;
+  border: none;
+  cursor: pointer;
+}
+.controller-prev {
+  transform: rotate(-90deg);
+}
+.controller-next {
+  transform: rotate(90deg);
+}
+
+.surprise-button {
+  margin-top: 1em;
+  background-color: white;
+  font-size: 16px;
+  color: #49a6e9;
+  border: 2px solid #49a6e9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.surprise-button:hover {
+  background-color: #49a6e9;
+  color: white;
+}
+
+.active {
+  display: block;
+}
